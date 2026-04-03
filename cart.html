@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Candel – Cart</title>
+    <link rel="icon" type="image/png" href="assets/img/nav.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Review your Candel order and proceed to checkout."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">Auralight </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <button class="cart-button" type="button" data-cart-toggle>
+            <span class="cart-icon">🕯</span>
+            <span class="cart-label">Cart</span>
+            <span class="cart-count" data-cart-count>0</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <p class="eyebrow">Your order</p>
+          <h1>Cart</h1>
+          <p class="page-subtitle">
+            Review your candles, adjust quantities, and get ready to check out.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cart-page-layout">
+          <div class="card cart-page-items" data-cart-page-items>
+            <p class="cart-empty">Your cart is empty.</p>
+          </div>
+          <aside class="card cart-page-summary">
+            <h2>Summary</h2>
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span data-cart-total>$0</span>
+            </div>
+            <p class="summary-note">
+              This is a demo checkout. No real payments are processed.
+            </p>
+            <button class="btn btn-primary btn-full" type="button" data-checkout>
+              Proceed to checkout
+            </button>
+            <p class="form-note" data-checkout-note></p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-light">
+        <div class="container">
+          <header class="section-header">
+            <h2>You might also like</h2>
+            <p>
+              If you enjoy layered scent stories, try pairing these candles with
+              the ones already in your cart.
+            </p>
+          </header>
+          <div class="grid grid-3">
+            <article class="product-card" data-product-id="1">
+              <img
+                src="https://picsum.photos/seed/candel-cart-morning-linen/800/600"
+                alt="Morning Linen candle next to a cup of coffee"
+                class="product-image"
+                loading="lazy"
+              />
+              <h3>Morning Linen</h3>
+              <p class="product-note">Airy, clean, and perfect for everyday.</p>
+              <p class="product-price">$24</p>
+              <button class="btn btn-secondary" type="button" data-add-to-cart>
+                Add to cart
+              </button>
+            </article>
+            <article class="product-card" data-product-id="4">
+              <img
+                src="https://picsum.photos/seed/candel-cart-midnight-fig/800/600"
+                alt="Midnight Fig candle in a night‑time vignette"
+                class="product-image"
+                loading="lazy"
+              />
+              <h3>Midnight Fig</h3>
+              <p class="product-note">A richer scent for after dark.</p>
+              <p class="product-price">$28</p>
+              <button class="btn btn-secondary" type="button" data-add-to-cart>
+                Add to cart
+              </button>
+            </article>
+            <article class="product-card" data-product-id="6">
+              <img
+                src="https://picsum.photos/seed/candel-cart-sunday-bloom/800/600"
+                alt="Sunday Bloom candle with flowers on a table"
+                class="product-image"
+                loading="lazy"
+              />
+              <h3>Sunday Bloom</h3>
+              <p class="product-note">Soft florals to brighten any room.</p>
+              <p class="product-price">$26</p>
+              <button class="btn btn-secondary" type="button" data-add-to-cart>
+                Add to cart
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Shipping & packaging</h2>
+            <p>
+              A peek at how we cushion, wrap, and send your candles so they
+              arrive ready to light.
+            </p>
+          </header>
+          <div class="grid grid-3">
+            <article class="card">
+              <img
+                src="https://picsum.photos/seed/candel-packaging/800/600"
+                alt="Eco‑friendly packaging materials around a candle box"
+                class="product-image"
+                loading="lazy"
+              />
+              <h3>Considered materials</h3>
+              <p>
+                We favor recyclable and reusable materials and avoid excess
+                plastic wherever we can.
+              </p>
+            </article>
+            <article class="card">
+              <img
+                src="https://picsum.photos/seed/candel-box/800/600"
+                alt="Closed shipping box with a simple Candel label"
+                class="product-image"
+                loading="lazy"
+              />
+              <h3>Ship‑ready boxes</h3>
+              <p>
+                Candles are nested securely so they can travel from our studio
+                shelves to your doorstep safely.
+              </p>
+            </article>
+            <article class="card">
+              <img
+                src="https://picsum.photos/seed/candel-note/800/600"
+                alt="A handwritten thank you note next to a candle"
+                class="product-image"
+                loading="lazy"
+              />
+              <h3>Small touches</h3>
+              <p>
+                In a real shop you might find scent cards or handwritten notes
+                tucked into each parcel.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" aria-label="Shopping cart" data-cart-drawer>
+      <div class="cart-inner">
+        <header class="cart-header">
+          <h2>Your cart</h2>
+          <button class="icon-button" type="button" data-cart-toggle>&times;</button>
+        </header>
+        <div class="cart-body" data-cart-body>
+          <p class="cart-empty">Your cart is empty. Add a candle to begin.</p>
+        </div>
+        <footer class="cart-footer">
+          <div class="cart-summary">
+            <span>Total</span>
+            <span class="cart-total" data-cart-total>$0</span>
+          </div>
+          <a href="cart.html" class="btn btn-primary btn-full">Review cart</a>
+        </footer>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-logo">Auralight</p>
+          <p class="footer-copy">Handcrafted candles for everyday rituals.</p>
+          <p class="footer-copy">© 2026 Candel Studio. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="products.html" class="footer-link">Products</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+          <div class="footer-links">
+            <a href="privacy.html" class="footer-link">Privacy</a>
+            <a href="terms.html" class="footer-link">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

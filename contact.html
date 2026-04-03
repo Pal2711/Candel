@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact Candel</title>
+    <link rel="icon" type="image/png" href="assets/img/nav.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Contact the Candel team with questions about orders, wholesale, or custom scents."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">Auralight </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link nav-link-active">Contact</a>
+          <button class="cart-button" type="button" data-cart-toggle>
+            <span class="cart-icon">🕯</span>
+            <span class="cart-label">Cart</span>
+            <span class="cart-count" data-cart-count>0</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <p class="eyebrow">Get in touch</p>
+          <h1>We’d love to hear from you.</h1>
+          <p class="page-subtitle">
+            Use the form below for order questions, wholesale requests, or
+            custom scent ideas.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <form class="card contact-form" data-contact-form>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="field">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic">
+                <option>Order question</option>
+                <option>Wholesale</option>
+                <option>Custom scent</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p class="form-note" data-contact-note>
+              We’ll respond within 1–2 business days.
+            </p>
+          </form>
+
+          <aside class="contact-aside">
+            <img
+              src="https://picsum.photos/seed/candel-studio-door/800/600"
+              alt="Exterior door of the Candel studio with warm light inside"
+              class="contact-photo"
+              loading="lazy"
+            />
+            <h2>Studio</h2>
+            <p>Open by appointment only.</p>
+            <p>Email: hello@example.com</p>
+            <p>
+              We’re based in a small studio where we mix, test, and pour every
+              candle by hand. If you’re nearby and interested in picking up an
+              order or planning a private workshop, send us a note and we’ll
+              find a time.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-light">
+        <div class="container">
+          <header class="section-header">
+            <h2>Common questions</h2>
+            <p>
+              A few quick answers about shipping, orders, and how to burn your
+              candles safely.
+            </p>
+          </header>
+          <div class="grid grid-3">
+            <div class="card">
+              <h3>Where do you ship?</h3>
+              <p>
+                This demo is not processing real orders, but in a live shop you
+                could describe your shipping regions and timelines here.
+              </p>
+            </div>
+            <div class="card">
+              <h3>How long will my candle last?</h3>
+              <p>
+                Most of our 220g jars burn for around 40 hours when trimmed and
+                burned in 3–4 hour sessions.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Any burn tips?</h3>
+              <p>
+                Always trim your wick to 5mm before lighting, keep the candle on
+                a heat‑safe surface, and never leave it unattended.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Wholesale & events</h2>
+            <p>
+              Partner with Candel for gifting, intimate events, or custom
+              collaborations that need a signature scent.
+            </p>
+          </header>
+          <div class="grid grid-3">
+            <article class="card">
+              <img
+                src="https://picsum.photos/seed/candel-wholesale/800/600"
+                alt="Boxes of candles prepared for wholesale orders"
+                class="product-image"
+                loading="lazy"
+              />
+              <h3>Wholesale partners</h3>
+              <p>
+                Stock Candel in your shop with curated scent assortments and
+                simple re‑order terms.
+              </p>
+            </article>
+            <article class="card">
+              <img
+                src="https://picsum.photos/seed/candel-event/800/600"
+                alt="Table setting with candles for an event"
+                class="product-image"
+                loading="lazy"
+              />
+              <h3>Events & weddings</h3>
+              <p>
+                We can help you select scents and vessels that feel right for
+                your gathering and space.
+              </p>
+            </article>
+            <article class="card">
+              <img
+                src="https://picsum.photos/seed/candel-custom/800/600"
+                alt="Fragrance bottles and notes on a desk"
+                class="product-image"
+                loading="lazy"
+              />
+              <h3>Custom projects</h3>
+              <p>
+                For brands and hosts looking for something truly unique, we
+                occasionally develop limited custom blends.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" aria-label="Shopping cart" data-cart-drawer>
+      <div class="cart-inner">
+        <header class="cart-header">
+          <h2>Your cart</h2>
+          <button class="icon-button" type="button" data-cart-toggle>&times;</button>
+        </header>
+        <div class="cart-body" data-cart-body>
+          <p class="cart-empty">Your cart is empty. Add a candle to begin.</p>
+        </div>
+        <footer class="cart-footer">
+          <div class="cart-summary">
+            <span>Total</span>
+            <span class="cart-total" data-cart-total>$0</span>
+          </div>
+          <a href="cart.html" class="btn btn-primary btn-full">Review cart</a>
+        </footer>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-logo">Auralight</p>
+          <p class="footer-copy">Handcrafted candles for everyday rituals.</p>
+          <p class="footer-copy">© 2026 Candel Studio. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="products.html" class="footer-link">Products</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+          <div class="footer-links">
+            <a href="privacy.html" class="footer-link">Privacy</a>
+            <a href="terms.html" class="footer-link">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+
