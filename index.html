@@ -1,479 +1,409 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Candel – Handcrafted Scented Candles</title>
-    <link rel="icon" type="image/png" href="assets/img/nav.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Candel – handcrafted scented candles for a cozy, elegant home."
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="index.html" class="logo">Auralight </a>
-        <nav class="main-nav" aria-label="Primary navigation">
-          <a href="index.html" class="nav-link nav-link-active">Home</a>
-          <a href="products.html" class="nav-link">Products</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-          <button class="cart-button" type="button" data-cart-toggle>
-            <span class="cart-icon">🕯</span>
-            <span class="cart-label">Cart</span>
-            <span class="cart-count" data-cart-count>0</span>
-          </button>
-        </nav>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Candel – Handcrafted Scented Candles</title>
+  <link rel="icon" type="image/png" href="assets/img/nav.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Candel – handcrafted scented candles for a cozy, elegant home." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Auralight</a>
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link nav-link-active">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+
+        <button class="cart-button" type="button">
+          <span class="cart-icon">🕯</span>
+          <span class="cart-label">Cart</span>
+          <span class="cart-count">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hand‑poured with care</p>
+          <h1>Bring warmth & calm to every room.</h1>
+          <p class="hero-subtitle">
+            Discover our collection of soy wax candles, crafted in small
+            batches with clean ingredients and timeless scents.
+          </p>
+          <div class="hero-actions">
+            <a href="products.html" class="btn btn-primary">Shop candles</a>
+            <a href="about.html" class="btn btn-ghost">Our story</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-visual-stack">
+            <img src="assets/img/hero.png" alt="Assorted Candel glass jars styled on a wooden table" class="hero-photo"
+              loading="lazy" />
+          </div>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-text">
-            <p class="eyebrow">Hand‑poured with care</p>
-            <h1>Bring warmth & calm to every room.</h1>
-            <p class="hero-subtitle">
-              Discover our collection of soy wax candles, crafted in small
-              batches with clean ingredients and timeless scents.
-            </p>
-            <div class="hero-actions">
-              <a href="products.html" class="btn btn-primary">Shop candles</a>
-              <a href="about.html" class="btn btn-ghost">Our story</a>
-            </div>
-          </div>
-          <div class="hero-visual">
-            <div class="hero-visual-stack">
-              <img
-                src="assets/img/hero.png"
-                alt="Assorted Candel glass jars styled on a wooden table"
-                class="hero-photo"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-light">
-        <div class="container">
-          <header class="section-header">
-            <h2>Best‑selling candles</h2>
-            <p>Customer favorites you’ll want in every corner of your home.</p>
-          </header>
-          <div class="grid grid-3" data-product-grid>
-            <article class="product-card" data-product-id="1">
-              <img
-                src="assets/img/Morning-Linen.png"
-                alt="A soft white candle labeled Morning Linen next to folded linen"
-                class="product-image"
-                loading="lazy"
-              />
-              <h3>Morning Linen</h3>
-              <p class="product-note">Cotton • White musk • Pear</p>
-              <p class="product-price">$24</p>
-              <button class="btn btn-secondary" type="button" data-add-to-cart>
-                Add to cart
-              </button>
-            </article>
-            <article class="product-card" data-product-id="2">
-              <img
-                src="assets/img/Forest_Ember.png"
-                alt="A candle surrounded by pine branches and glowing embers"
-                class="product-image"
-                loading="lazy"
-              />
-              <h3>Enchanted Woods</h3>
-              <p class="product-note">Pine • Smoke • Patchouli</p>
-              <p class="product-price">$26</p>
-              <button class="btn btn-secondary" type="button" data-add-to-cart>
-                Add to cart
-              </button>
-            </article>
-            <article class="product-card" data-product-id="3">
-              <img
-                src="assets/img/Citrus Atelier.png"
-                alt="A bright citrus candle with sliced grapefruit and bergamot"
-                class="product-image"
-                loading="lazy"
-              />
-              <h3>Citrus Atelier</h3>
-              <p class="product-note">Grapefruit • Bergamot • Neroli</p>
-              <p class="product-price">$22</p>
-              <button class="btn btn-secondary" type="button" data-add-to-cart>
-                Add to cart
-              </button>
-            </article>
-          </div>
-          <div class="section-cta">
-            <a href="products.html" class="link-arrow">View full collection</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <header class="section-header">
-            <h2>Find your scent family</h2>
-            <p>
-              Whether you lean bright and citrusy, soft and floral, or deep and
-              resinous, there’s a Candel candle for every mood.
-            </p>
-          </header>
-          <div class="grid grid-3">
-            <article class="card">
-              <img
-                src="assets/img/Citrus_fresh.png"
-                alt="Citrus fruits with a candle in the center"
-                class="product-image"
-                loading="lazy"
-              />
-              <h3>Citrus & fresh</h3>
-              <p>
-                Grapefruit, bergamot, and airy herbs that feel like opening a
-                window on a clear morning.
-              </p>
-            </article>
-            <article class="card">
-              <img
-                src="assets/img/Floral_soft.png"
-                alt="Soft florals arranged around a candle"
-                class="product-image"
-                loading="lazy"
-              />
-              <h3>Floral & soft</h3>
-              <p>
-                Petals, powder, and a hint of suede for a gentle, everyday
-                fragrance that never overwhelms.
-              </p>
-            </article>
-            <article class="card">
-              <img
-                src="assets/img/Wood_amber.png"
-                alt="Amber glass and wood blocks styled with a candle"
-                class="product-image"
-                loading="lazy"
-              />
-              <h3>Wood & amber</h3>
-              <p>
-                Resin, smoke, and polished woods that make evenings feel warm,
-                grounded, and luxurious.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-dark">
-        <div class="container benefits">
-          <div>
-            <h2>Thoughtful details in every candle.</h2>
-            <p>
-              From clean‑burning soy wax to cotton wicks, Candel is designed to
-              elevate your rituals without overwhelming your space.
-            </p>
-          </div>
-          <div class="">
-            <img src="assets/img/Thoughtful.png">
-          </div>
-          <div class="grid grid-3 benefits-grid">
-            <div class="benefit">
-              <h3>Clean ingredients</h3>
-              <p>Phthalate‑free fragrances and lead‑free wicks only.</p>
-            </div>
-            <div class="benefit">
-              <h3>Small batch</h3>
-              <p>Hand‑poured to ensure consistent quality from first light.</p>
-            </div>
-            <div class="benefit">
-              <h3>Eco‑conscious</h3>
-              <p>Reusable glass vessels and plastic‑free shipping.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-light">
-        <div class="container">
-          <header class="section-header">
-            <h2>See Candel in your space</h2>
-            <p>
-              Style our candles on nightstands, coffee tables, and shelves to
-              create pockets of calm throughout your home.
-            </p>
-          </header>
-          <div class="grid grid-3 gallery-grid">
-            <figure class="gallery-card">
-              <img
-                src="assets/img/spae1.png"
-                alt="Candle glowing softly on a bedside table next to a book"
-                loading="lazy"
-              />
-              <figcaption>Leave a gentle glow by your bedside for slow evenings.</figcaption>
-            </figure>
-            <figure class="gallery-card">
-              <img
-                src="assets/img/spae2.png"
-                alt="Trio of candles styled on a living room coffee table"
-                loading="lazy"
-              />
-              <figcaption>Layer different scents to define corners of your living room.</figcaption>
-            </figure>
-            <figure class="gallery-card">
-              <img
-                src="assets/img/spae3.png"
-                alt="Candle near a bathtub with bubbles and eucalyptus"
-                loading="lazy"
-              />
-              <figcaption>Turn a quick bath into a full ritual with warm candlelight.</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <header class="section-header">
-            <h2>What customers are saying</h2>
-            <p>
-              A few notes from people who have made Candel part of their daily
-              rituals.
-            </p>
-          </header>
-          <div class="grid grid-3">
-            <article class="testimonial-card">
-              <div class="testimonial-header">
-                <img
-                  src="https://picsum.photos/seed/candel-avatar-a/128/128"
-                  alt="Customer avatar"
-                  class="testimonial-avatar"
-                  loading="lazy"
-                />
-                <div>
-                  <p class="testimonial-name">Amira</p>
-                  <p class="testimonial-tagline">Morning Linen, daily</p>
-                </div>
-              </div>
-              <p class="testimonial-quote">
-                “I light Morning Linen every morning while I make coffee. It’s
-                subtle, comforting, and makes my tiny kitchen feel like a hotel.”
-              </p>
-            </article>
-            <article class="testimonial-card">
-              <div class="testimonial-header">
-                <img
-                  src="https://picsum.photos/seed/candel-avatar-j/128/128"
-                  alt="Customer avatar"
-                  class="testimonial-avatar"
-                  loading="lazy"
-                />
-                <div>
-                  <p class="testimonial-name">Jonas</p>
-                  <p class="testimonial-tagline">Forest Ember at night</p>
-                </div>
-              </div>
-              <p class="testimonial-quote">
-                “Forest Ember is my go‑to for slow evenings on the couch. It’s
-                cozy without smelling like a campfire.”
-              </p>
-            </article>
-            <article class="testimonial-card">
-              <div class="testimonial-header">
-                <img
-                  src="https://picsum.photos/seed/candel-avatar-l/128/128"
-                  alt="Customer avatar"
-                  class="testimonial-avatar"
-                  loading="lazy"
-                />
-                <div>
-                  <p class="testimonial-name">Lena</p>
-                  <p class="testimonial-tagline">Gifting with Candel</p>
-                </div>
-              </div>
-              <p class="testimonial-quote">
-                “I keep a few Citrus Atelier jars on hand as last‑minute gifts.
-                The packaging and scents always feel special.”
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-light">
-        <div class="container">
-          <header class="section-header">
-            <h2>Care for your candles</h2>
-            <p>
-              A few simple habits will help every Candel candle burn cleaner,
-              safer, and longer.
-            </p>
-          </header>
-          <div class="card">
-            <img
-              src="assets/img/candle-care_new.jpg"
-              alt="Close‑up of a candle wick being trimmed before lighting"
-              class="hero-photo"
-              loading="lazy"
-            />
-            <ol class="steps">
-              <li>
-                <h3>Trim before every burn</h3>
-                <p>
-                  Keep your wick around 5mm to reduce soot and help the flame
-                  stay steady.
-                </p>
-              </li>
-              <li>
-                <h3>Let the wax reach the edges</h3>
-                <p>
-                  On the first few burns, let the melt pool reach the sides of
-                  the glass to prevent tunneling.
-                </p>
-              </li>
-              <li>
-                <h3>Stop with 1cm of wax left</h3>
-                <p>
-                  For safety, extinguish your candle when there is about 1cm of
-                  wax remaining in the jar.
-                </p>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="card">
-            <div class="section-header">
-              <div>
-                <h2>Stay in the Candel loop</h2>
-                <p>
-                  Be the first to hear about new scents, limited runs, and
-                  studio notes. No noise, just the good stuff.
-                </p>
-              </div>
-            </div>
-            <form class="contact-form" data-newsletter-form>
-              <div class="field">
-                <label for="newsletter-email">Email address</label>
-                <input
-                  id="newsletter-email"
-                  name="email"
-                  type="email"
-                  placeholder="you@example.com"
-                  required
-                />
-              </div>
-              <button class="btn btn-primary" type="submit">Join newsletter</button>
-              <p class="form-note">
-                This is a demo form. Connect it to your email platform before
-                going live.
-              </p>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-light">
-        <div class="container">
-          <header class="section-header">
-            <h2>From the Candel journal</h2>
-            <p>
-              Short stories and tips from our studio on scent, rituals, and
-              everyday atmosphere.
-            </p>
-          </header>
-          <div class="grid grid-3">
-            <article class="card">
-              <img
-                src="assets/img/Designing.png"
-                alt="Sunlight pouring through a window onto a candle and notebook"
-                class="product-image"
-                loading="lazy"
-              />
-              <h3>Designing a morning ritual</h3>
-              <p>
-                How a single candle, a quiet drink, and five minutes of stillness
-                can reset the tone of your day.
-              </p>
-            </article>
-            <article class="card">
-              <img
-                src="assets/img/Designing1.png"
-                alt="Multiple candles styled on shelves with books and ceramics"
-                class="product-image"
-                loading="lazy"
-              />
-              <h3>Layering scent in small spaces</h3>
-              <p>
-                Tips for choosing complementing scents so your home feels
-                intentional, not overwhelming.
-              </p>
-            </article>
-            <article class="card">
-              <img
-                src="assets/img/Designing2.png"
-                alt="Close up of someone trimming a candle wick"
-                class="product-image"
-                loading="lazy"
-              />
-              <h3>Making every burn last longer</h3>
-              <p>
-                A deeper look at wick care, first burns, and how we test for
-                clean, even candle performance.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <aside class="cart-drawer" aria-label="Shopping cart" data-cart-drawer>
-      <div class="cart-inner">
-        <header class="cart-header">
-          <h2>Your cart</h2>
-          <button class="icon-button" type="button" data-cart-toggle>&times;</button>
+    <section class="section section-light">
+      <div class="container">
+        <header class="section-header">
+          <h2>Best‑selling candles</h2>
+          <p>Customer favorites you’ll want in every corner of your home.</p>
         </header>
-        <div class="cart-body" data-cart-body>
-          <p class="cart-empty">Your cart is empty. Add a candle to begin.</p>
+        <div class="grid grid-3" data-product-grid>
+          <article class="product-card" data-product-id="1">
+            <img src="assets/img/Morning-Linen.png" alt="A soft white candle labeled Morning Linen next to folded linen"
+              class="product-image" loading="lazy" />
+            <h3>Morning Linen</h3>
+            <p class="product-note">Cotton • White musk • Pear</p>
+            <p class="product-price">$24</p>
+            <button class="btn btn-secondary" type="button" data-add-to-cart>
+              Add to cart
+            </button>
+          </article>
+          <article class="product-card" data-product-id="2">
+            <img src="assets/img/Forest_Ember.png" alt="A candle surrounded by pine branches and glowing embers"
+              class="product-image" loading="lazy" />
+            <h3>Enchanted Woods</h3>
+            <p class="product-note">Pine • Smoke • Patchouli</p>
+            <p class="product-price">$26</p>
+            <button class="btn btn-secondary" type="button" data-add-to-cart>
+              Add to cart
+            </button>
+          </article>
+          <article class="product-card" data-product-id="3">
+            <img src="assets/img/Citrus Atelier.png" alt="A bright citrus candle with sliced grapefruit and bergamot"
+              class="product-image" loading="lazy" />
+            <h3>Citrus Atelier</h3>
+            <p class="product-note">Grapefruit • Bergamot • Neroli</p>
+            <p class="product-price">$22</p>
+            <button class="btn btn-secondary" type="button" data-add-to-cart>
+              Add to cart
+            </button>
+          </article>
         </div>
-        <footer class="cart-footer">
-          <div class="cart-summary">
-            <span>Total</span>
-            <span class="cart-total" data-cart-total>$0</span>
-          </div>
-          <a href="cart.html" class="btn btn-primary btn-full">Review cart</a>
-        </footer>
+        <div class="section-cta">
+          <a href="products.html" class="link-arrow">View full collection</a>
+        </div>
       </div>
-    </aside>
+    </section>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Find your scent family</h2>
+          <p>
+            Whether you lean bright and citrusy, soft and floral, or deep and
+            resinous, there’s a Candel candle for every mood.
+          </p>
+        </header>
+        <div class="grid grid-3">
+          <article class="card">
+            <img src="assets/img/Citrus_fresh.png" alt="Citrus fruits with a candle in the center" class="product-image"
+              loading="lazy" />
+            <h3>Citrus & fresh</h3>
+            <p>
+              Grapefruit, bergamot, and airy herbs that feel like opening a
+              window on a clear morning.
+            </p>
+          </article>
+          <article class="card">
+            <img src="assets/img/Floral_soft.png" alt="Soft florals arranged around a candle" class="product-image"
+              loading="lazy" />
+            <h3>Floral & soft</h3>
+            <p>
+              Petals, powder, and a hint of suede for a gentle, everyday
+              fragrance that never overwhelms.
+            </p>
+          </article>
+          <article class="card">
+            <img src="assets/img/Wood_amber.png" alt="Amber glass and wood blocks styled with a candle"
+              class="product-image" loading="lazy" />
+            <h3>Wood & amber</h3>
+            <p>
+              Resin, smoke, and polished woods that make evenings feel warm,
+              grounded, and luxurious.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container benefits">
         <div>
-          <p class="footer-logo">Auralight</p>
-          <p class="footer-copy">Handcrafted candles for everyday rituals.</p>
-          <p class="footer-copy">© 2026 Candel Studio. All rights reserved.</p>
+          <h2>Thoughtful details in every candle.</h2>
+          <p>
+            From clean‑burning soy wax to cotton wicks, Candel is designed to
+            elevate your rituals without overwhelming your space.
+          </p>
         </div>
-        <div class="footer-right">
-          <div class="footer-links">
-            <a href="index.html" class="footer-link">Home</a>
-            <a href="products.html" class="footer-link">Products</a>
-            <a href="about.html" class="footer-link">About</a>
-            <a href="contact.html" class="footer-link">Contact</a>
+        <div class="">
+          <img src="assets/img/Thoughtful.png">
+        </div>
+        <div class="grid grid-3 benefits-grid">
+          <div class="benefit">
+            <h3>Clean ingredients</h3>
+            <p>Phthalate‑free fragrances and lead‑free wicks only.</p>
           </div>
-          <div class="footer-links">
-            <a href="privacy.html" class="footer-link">Privacy</a>
-            <a href="terms.html" class="footer-link">Terms</a>
+          <div class="benefit">
+            <h3>Small batch</h3>
+            <p>Hand‑poured to ensure consistent quality from first light.</p>
+          </div>
+          <div class="benefit">
+            <h3>Eco‑conscious</h3>
+            <p>Reusable glass vessels and plastic‑free shipping.</p>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="assets/js/main.js"></script>
-  </body>
+    <section class="section section-light">
+      <div class="container">
+        <header class="section-header">
+          <h2>See Candel in your space</h2>
+          <p>
+            Style our candles on nightstands, coffee tables, and shelves to
+            create pockets of calm throughout your home.
+          </p>
+        </header>
+        <div class="grid grid-3 gallery-grid">
+          <figure class="gallery-card">
+            <img src="assets/img/spae1.png" alt="Candle glowing softly on a bedside table next to a book"
+              loading="lazy" />
+            <figcaption>Leave a gentle glow by your bedside for slow evenings.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/img/spae2.png" alt="Trio of candles styled on a living room coffee table" loading="lazy" />
+            <figcaption>Layer different scents to define corners of your living room.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/img/spae3.png" alt="Candle near a bathtub with bubbles and eucalyptus" loading="lazy" />
+            <figcaption>Turn a quick bath into a full ritual with warm candlelight.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>What customers are saying</h2>
+          <p>
+            A few notes from people who have made Candel part of their daily
+            rituals.
+          </p>
+        </header>
+        <div class="grid grid-3">
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://picsum.photos/seed/candel-avatar-a/128/128" alt="Customer avatar"
+                class="testimonial-avatar" loading="lazy" />
+              <div>
+                <p class="testimonial-name">Amira</p>
+                <p class="testimonial-tagline">Morning Linen, daily</p>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              “I light Morning Linen every morning while I make coffee. It’s
+              subtle, comforting, and makes my tiny kitchen feel like a hotel.”
+            </p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://picsum.photos/seed/candel-avatar-j/128/128" alt="Customer avatar"
+                class="testimonial-avatar" loading="lazy" />
+              <div>
+                <p class="testimonial-name">Jonas</p>
+                <p class="testimonial-tagline">Forest Ember at night</p>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              “Forest Ember is my go‑to for slow evenings on the couch. It’s
+              cozy without smelling like a campfire.”
+            </p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://picsum.photos/seed/candel-avatar-l/128/128" alt="Customer avatar"
+                class="testimonial-avatar" loading="lazy" />
+              <div>
+                <p class="testimonial-name">Lena</p>
+                <p class="testimonial-tagline">Gifting with Candel</p>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              “I keep a few Citrus Atelier jars on hand as last‑minute gifts.
+              The packaging and scents always feel special.”
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <header class="section-header">
+          <h2>Care for your candles</h2>
+          <p>
+            A few simple habits will help every Candel candle burn cleaner,
+            safer, and longer.
+          </p>
+        </header>
+        <div class="card">
+          <img src="assets/img/candle-care_new.jpg" alt="Close‑up of a candle wick being trimmed before lighting"
+            class="hero-photo" loading="lazy" />
+          <ol class="steps">
+            <li>
+              <h3>Trim before every burn</h3>
+              <p>
+                Keep your wick around 5mm to reduce soot and help the flame
+                stay steady.
+              </p>
+            </li>
+            <li>
+              <h3>Let the wax reach the edges</h3>
+              <p>
+                On the first few burns, let the melt pool reach the sides of
+                the glass to prevent tunneling.
+              </p>
+            </li>
+            <li>
+              <h3>Stop with 1cm of wax left</h3>
+              <p>
+                For safety, extinguish your candle when there is about 1cm of
+                wax remaining in the jar.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <div class="section-header">
+            <div>
+              <h2>Stay in the Candel loop</h2>
+              <p>
+                Be the first to hear about new scents, limited runs, and
+                studio notes. No noise, just the good stuff.
+              </p>
+            </div>
+          </div>
+          <form class="contact-form" data-newsletter-form>
+            <div class="field">
+              <label for="newsletter-email">Email address</label>
+              <input id="newsletter-email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <button class="btn btn-primary" type="submit">Join newsletter</button>
+            <p class="form-note">
+              This is a demo form. Connect it to your email platform before
+              going live.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <header class="section-header">
+          <h2>From the Candel journal</h2>
+          <p>
+            Short stories and tips from our studio on scent, rituals, and
+            everyday atmosphere.
+          </p>
+        </header>
+        <div class="grid grid-3">
+          <article class="card">
+            <img src="assets/img/Designing.png" alt="Sunlight pouring through a window onto a candle and notebook"
+              class="product-image" loading="lazy" />
+            <h3>Designing a morning ritual</h3>
+            <p>
+              How a single candle, a quiet drink, and five minutes of stillness
+              can reset the tone of your day.
+            </p>
+          </article>
+          <article class="card">
+            <img src="assets/img/Designing1.png" alt="Multiple candles styled on shelves with books and ceramics"
+              class="product-image" loading="lazy" />
+            <h3>Layering scent in small spaces</h3>
+            <p>
+              Tips for choosing complementing scents so your home feels
+              intentional, not overwhelming.
+            </p>
+          </article>
+          <article class="card">
+            <img src="assets/img/Designing2.png" alt="Close up of someone trimming a candle wick" class="product-image"
+              loading="lazy" />
+            <h3>Making every burn last longer</h3>
+            <p>
+              A deeper look at wick care, first burns, and how we test for
+              clean, even candle performance.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" aria-label="Shopping cart" data-cart-drawer>
+    <div class="cart-inner">
+      <header class="cart-header">
+        <h2>Your cart</h2>
+        <button class="icon-button" type="button" data-cart-toggle>&times;</button>
+      </header>
+      <div class="cart-body" data-cart-body>
+        <p class="cart-empty">Your cart is empty. Add a candle to begin.</p>
+      </div>
+      <footer class="cart-footer">
+        <div class="cart-summary">
+          <span>Total</span>
+          <span class="cart-total" data-cart-total>$0</span>
+        </div>
+        <a href="cart.html" class="btn btn-primary btn-full">Review cart</a>
+      </footer>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-logo">Auralight</p>
+        <p class="footer-copy">Handcrafted candles for everyday rituals.</p>
+        <p class="footer-copy">© 2026 Candel Studio. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="products.html" class="footer-link">Products</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html" class="footer-link">Privacy</a>
+          <a href="terms.html" class="footer-link">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
-
-
